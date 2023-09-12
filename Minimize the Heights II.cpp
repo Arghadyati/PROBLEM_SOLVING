@@ -16,7 +16,7 @@ int main()
     int largest = v[n - 1] - k;
     int smallest = v[0] + k;
     int ma, mi;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         mi = min(smallest, v[i + 1] - k);
         ma = max(largest, v[i] + k);
